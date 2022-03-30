@@ -146,3 +146,8 @@ PRODUCT_PACKAGES += \
 	XperiaWiFiOverlay \
 	ZigZagSignalOverlay \
 	ZigZagWiFiOverlay
+
+# Udfps
+PRODUCT_PACKAGES += \
+    UdfpsAnimations \
+    UdfpsIcons
