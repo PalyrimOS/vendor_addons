@@ -14,6 +14,47 @@
 LOCAL_PATH := $(call my-dir)
 include $(call all-subdir-makefiles,$(LOCAL_PATH))
 
+# Fonts
+PRODUCT_PACKAGES += \
+    fonts_customization.xml \
+    FontAccuratistOverlay \
+    FontAclonicaOverlay \
+    FontAmaranteOverlay \
+    FontBariolOverlay \
+    FontCagliostroOverlay \
+    FontCoconOverlay \
+    FontComfortaaOverlay \
+    FontComicSansOverlay \
+    FontCoolstoryOverlay \
+    FontExotwoOverlay \
+    FontFifa2018Overlay \
+    FontGoogleSansOverlay \
+    FontGrandHotelOverlay \
+    FontHarmonySansOverlay \
+    FontLatoOverlay \
+    FontLGSmartGothicOverlay \
+    FontLinotteOverlay \
+    FontNokiaPureOverlay \
+    FontNunitoOverlay \
+    FontOneplusSansOverlay \
+    FontOneplusSlateOverlay \
+    FontOswaldOverlay \
+    FontQuandoOverlay \
+    FontRedressedOverlay \
+    FontReemKufiOverlay \
+    FontRobotoCondensedOverlay \
+    FontRosemaryOverlay \
+    FontRubikOverlay \
+    FontSamsungOneOverlay \
+    FontSonySketchOverlay \
+    FontStoropiaOverlay \
+    FontSurferOverlay \
+    FontUbuntuOverlay
+
+
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,vendor/addons/prebuilts/product/fonts,$(TARGET_COPY_OUT_PRODUCT)/fonts)
+    
 # Icon Packs
 PRODUCT_PACKAGES += \
     IconPackCircularAndroidOverlay \
